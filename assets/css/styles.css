@@ -181,6 +181,9 @@
     font-size: 1.3rem;
     cursor: pointer;
   }
+  .header__logo{
+    height: 100%;
+  }
   
   /* Show menu */
   .show-menu{
@@ -735,6 +738,10 @@
   }
   
   /*===== MEDIA QUERIES =====*/
+
+  .skills__content{
+    flex-direction: column;
+}
   @media screen and (min-width: 576px){
     .home__img img{
       width: 330px;
