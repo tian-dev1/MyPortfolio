@@ -106,13 +106,14 @@
   .section-title{
     font-size: var(--h1-font-size);
     color: var(--first-color);
-    margin-bottom: var(--mb-3);
+    /*margin-bottom: var(--mb-3);*/
   }
   
   .section-subtitle{
     display: 	block;
     font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-5);
   }
   
   /*===== LAYOUT =====*/
@@ -414,7 +415,7 @@
   /*===== SERVICES =====*/
   .services__data{
     padding: 3rem 1rem;
-    background-color: #fff;
+    background-color: var(--first-color);
     border-radius: .5rem;
     text-align: center;
     transition: .4s;
@@ -423,7 +424,7 @@
   
   .services__icon, .services__title{
     margin-bottom: var(--mb-2);
-    color: var(--first-color);
+    color: var(--first-color-lighten);
   }
   
   .services__icon{
@@ -436,6 +437,7 @@
   
   .services__description{
     margin-bottom: var(--mb-4);
+    color: var(--first-color-lighten);
   }
   
   .services__data:hover{
@@ -579,6 +581,15 @@
   .contact__title{
     font-size: var(--h3-font-size);
     margin: var(--mb-1) 0;
+  }
+
+  .button-contact{
+    padding: var(--mb-1);
+    border: 1px var(--first-color) solid;
+  }
+  .button-contact:hover{
+      color: white;
+      background-color: var(--first-color-dark);
   }
   
   .contact__social{
@@ -767,7 +778,7 @@
       padding-top: 4rem;
     }
     .section-title{
-      margin-bottom: var(--mb-5);
+      /*margin-bottom: var(--mb-5);*/
     }
     .nav{
       height: calc(var(--header-height) + 1.5rem);
