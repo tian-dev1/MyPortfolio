@@ -26,9 +26,9 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
                 </ul>
             </div>
@@ -75,25 +75,24 @@
                             I love learning about new technologies. I like knowing what problems are being solved, how they are being solved and how I can use technology to create better products or solutions.
                         </span>
                     </p>
-                    <div>
-                        <span class="about__number">+01</span>
-                        <span class="about__achievement">Years off Experience</span>
+                    <div class="about__items">
+                        <div>
+                            <span class="about__number">+01</span>
+                            <span class="about__achievement">Years off Experience</span>
+                        </div>
+                        <div>
+                            <span class="about__number">+10</span>
+                            <span class="about__achievement">Projects complete</span>
+                        </div>
                     </div>
-                    <div>
-                        <span class="about__number">+10</span>
-                        <span class="about__achievement">Projects complete</span>
-                    </div>
-                    <div>
-                        <span class="about__number">07</span>
-                        <span class="about__achievement">Best work awards</span>
-                    </div>
+                    
                 </div>
                 <img src="./assets/img/photo/MyPhoto2.png" alt="Mi foto 2" class="about__img">
             </div>
         </section>
 
         <!--===== QUALIFICATION =====-->
-        <section class="qualification section bd-container">
+        <section class="qualification section bd-container" id="qualification">
             <h2 class="section-title">Qualification</h2>
             <span class="section-subtitle">Experience , education and licenses and certifications </span> 
 
@@ -110,7 +109,7 @@
 
                             <div class="qualification__box">
                                 <span class="qualification__work">
-                                    <i class="bx bx-briefcase-alt qualification__icon"></i>
+                                    <i class="bx bx-book-bookmark qualification__icon"></i>
                                     SENA -Servicio nacional de aprendizaje
                                 </span>
 
@@ -126,7 +125,7 @@
 
                             <div class="qualification__box">
                                 <span class="qualification__work">
-                                    <i class="bx bx-book-alt qualification__icon"></i>
+                                    <i class="bx bx-book-bookmark qualification__icon"></i>
                                     SENA -Servicio nacional de aprendizaje
                                 </span>
 
@@ -173,7 +172,7 @@
 
                                 <span class="qualification__work">
                                     <i class="bx bx-calendar-alt qualification__icon"></i>
-                                    Sep 2020 - Currently
+                                    Sep 2020 - Jul 2021
                                 </span>
                             </div>
                         </div>
@@ -191,7 +190,7 @@
 
                             <div class="qualification__box">
                                 <span class="qualification__work">
-                                    <i class="bx bx-book-alt qualification__icon"></i>
+                                    <i class="bx bx-folder-open qualification__icon"></i>
                                     BICTIA
                                 </span>
 
@@ -207,7 +206,7 @@
 
                             <div class="qualification__box">
                                 <span class="qualification__work">
-                                    <i class="bx bx-briefcase-alt qualification__icon"></i>
+                                    <i class="bx bx-folder-open qualification__icon"></i>
                                     CertiProf
                                 </span>
 
@@ -223,7 +222,7 @@
 
                             <div class="qualification__box">
                                 <span class="qualification__work">
-                                    <i class="bx bx-briefcase-alt qualification__icon"></i>
+                                    <i class="bx bx-folder-open qualification__icon"></i>
                                     BICTIA
                                 </span>
 
@@ -356,7 +355,7 @@
         </section>
 
         <!--===== SERVICES =====-->
-        <section class="services section bd-container" id="services">
+        <section class="services section bd-container">
             <h2 class="section-title">Services</h2>
             <span class="section-subtitle">What i offer</span>
 
@@ -366,21 +365,18 @@
                     <i class="bx bx-laptop services__icon"></i>    
                     <h3 class="services__title">Web Development</h3>
                     <p class="services__description">Maintenance, development and improvements of web-oriented applications </p>
-                    <a href="#" class="button">Know More</a>
                 </div>   
 
                 <div class="services__data">
                     <i class="bx bx-data services__icon"></i>    
                     <h3 class="services__title">Database</h3>
                     <p class="services__description">Design, maintenance and improvements in the databases of different applications</p>
-                    <a href="#" class="button">Know More</a>
                 </div>
 
                 <div class="services__data">
                     <i class="bx bx-code-curly services__icon"></i>    
                     <h3 class="services__title">Backend Development</h3>
                     <p class="services__description">Development, maintenance and improvements in the business logic from the server</p>
-                    <a href="#" class="button">Know More</a>
                 </div> 
                 
                 
@@ -470,7 +466,7 @@
             
         </section>
 
-        <!--===== TESTIMONIAL =====-->
+        <!--===== TESTIMONIAL 
         <section class="testimonial section bd-container">
             <h2 class="section-title">Testimonial</h2>
             <span class="section-subtitle">My client saying</span>
@@ -500,7 +496,7 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-        </section>
+        </section>=====-->
 
         <!--===== PROJECT IN MIND 
             <section class="project section bd-container">
@@ -576,14 +572,18 @@
     <!--===== FOOTER =====-->
     <footer class="footer">
         <div class="footer__container bd-container">
-            <h1 class="footer__title">Cristian Arevalo</h1>
-            <p class="footer__description">I am Cristian Arevalo and this is my personal portfolio</p>
-            <div class="footer__social">
-                <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
-                <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
-                <a href="#" class="footer__link"><i class="bx bxl-dribbble"></i></a>
+            <div class="footer__section">
+                <div>
+                    <img class="header__logo" id="header__logo" src="./assets/img/logos/LogoTianBlanco.png" alt="Logo tian">
+                </div>
+                <div>
+                    <p>📋✍ Dedication to meet my goals.</p>
+                    <p>👨‍🏫💻 Continuous learning to improve day by day.</p>
+                    <p>👨‍💻👩‍💻 Teamwork to improve efforts and increase the effectiveness of results.</p>
+                </div>
             </div>
-            <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
+            
+            <p class="footer__copy">&#169; 2021 Tian Developer. All right reserved</p>
         </div>
     </footer>
 
