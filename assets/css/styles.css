@@ -317,7 +317,7 @@ img {
   justify-content: space-between;
   width: 100%;
   min-height: calc(100vh - var(--header-height) - 7rem);
-  background-image: url("../img/photo/Banner.jpg");
+  background-image: url("../img/photo/banner.jpg");
   padding: 2rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -370,7 +370,7 @@ img {
   }
 
   .home__banner {
-    background-image: url("../img/photo/BannerMobile.jpg");
+    background-image: url("../img/photo/bannerMobile.jpg");
     background-position: center top;
     background-size: cover;
   }
