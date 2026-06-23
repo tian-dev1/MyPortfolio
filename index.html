@@ -1,554 +1,1017 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./assets/img/logos/LogoTianBlancoIcono.ico" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/img/logos/LogoTianBlancoIcono.ico"
+    />
     <!-- ===== SWIPER CSS ===== -->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!-- ===== BOX ICONS ===== -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>TianDev</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--===== SCROLL TOP =====-->
     <a href="#" class="scrolltop" id="scroll-top">
-        <i class="bx bx-chevron-up scrolltop__icon"></i>
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
     </a>
     <!--===== HEADER =====-->
-    <header class="l-header " id="header">
-        <nav class="nav bd-container">
-            <img class="header__logo" id="header__logo" src="./assets/img/logos/LogoTianBlanco.png" alt="Logo tian">
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
-                </ul>
-            </div>
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="bx bx-menu"></i>
-            </div>
-        </nav>
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <img
+          class="header__logo"
+          id="header__logo"
+          src="./assets/img/logos/LogoTianBlanco.png"
+          alt="Logo tian"
+        />
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link"
+                ><i class="bx bx-home"></i> Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"
+                ><i class="bx bx-user"></i> About</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link"
+                ><i class="bx bx-book-bookmark"></i> Qualification</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link"
+                ><i class="bx bx-code"></i> Skills</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link"
+                ><i class="bx bx-code"></i> Services</a
+              >
+            </li>
+            <!-- <li class="nav__item">
+              <a href="#portfolio" class="nav__link"
+                ><i class="bx bx-briefcase"></i> Portfolio</a
+              >
+            </li> -->
+            <!-- <li class="nav__item">
+              <a href="#contact" class="nav__link"
+                ><i class="bx bx-message"></i> Contact me</a
+              >
+            </li> -->
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
 
     <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home" id="home">
-            <div class="home__container bd-container bd-grid">
-                <div class="home__data">
-                    <span class="home__greeting">Hello, My name is </span>
-                    <h1 class="home__name">Cristian Arevalo</h1>
-                    <span class="home__profession">Web Developer</span>
-                    <a download="" href="assets/pdf/H.V-CristianCamiloArevalo.pdf" class="button button-light">Download CV</a>
-                </div>
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/tiancamilo01/" title="Linkedin" class="home__social-icon" target="_blank"><i class="bx bxl-linkedin-square bx-md"></i></a>
-                    <a href="https://web.telegram.org/" title="Telegram" class="home__social-icon" target="_blank"><i class="bx bxl-telegram bx-md"></i></a>
-                    <a href="mailto:tiancamilo59@gmail.com" title="Gmail" class="home__social-icon"><i class="bx bxl-google bx-md"></i></a>
-                    <a href="https://github.com/tiancamilo01" title="GitHub" class="home__social-icon" target="_blank"><i class="bx bxl-github bx-md"></i></a>
-                    
-                </div>
-                <div class="home__img">
-                    <img src="./assets/img/photo/MyPhoto.png" alt="Mi foto">
-                </div>
+      <!--===== HOME =====-->
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__banner">
+            <div class="home__data">
+              <span class="home__greeting">Hello, My name is </span>
+              <h1 class="home__name">Cristian Arevalo</h1>
+              <span class="home__profession"
+                >Systems Engineer | Fullstack Developer</span
+              >
+              <a
+                download=""
+                href="assets/pdf/CV-CristianCamiloArevalo.pdf"
+                class="button button-light"
+                >Download CV</a
+              >
             </div>
-        </section>
-        
-        <!--===== ABOUT =====-->
-        <section class="about section bd-container" id="about">
-            <h2 class="section-title">About me</h2>
-            <span class="section-subtitle">A bit of me</span>
+          </div>
+          <div class="home__social">
+            <a
+              href="https://www.linkedin.com/in/tian-dev/"
+              title="Linkedin"
+              class="home__social-icon"
+              target="_blank"
+              ><i class="bx bxl-linkedin-square bx-md"></i
+            ></a>
+            <a
+              href="https://www.telegram.me/tiandev"
+              title="Telegram"
+              class="home__social-icon"
+              target="_blank"
+              ><i class="bx bxl-telegram bx-md"></i
+            ></a>
+            <a
+              href="mailto:tiancamilo59@gmail.com"
+              title="Gmail"
+              class="home__social-icon"
+              ><i class="bx bxl-google bx-md"></i
+            ></a>
+            <a
+              href="https://github.com/tian-dev1"
+              title="GitHub"
+              class="home__social-icon"
+              target="_blank"
+              ><i class="bx bxl-github bx-md"></i
+            ></a>
+          </div>
+        </div>
+      </section>
 
-            <div class="about__container bd-grid">
-                <div class="about__data bd-grid">
-                    <p class="about__description"> 
-                        <span>I am a web developer with more than a year of experience.
-                            Technologist in analysis and development of information systems and self-taught student with ease to work in a team.
-                            <br>
-                            I love learning about new technologies. I like knowing what problems are being solved, how they are being solved and how I can use technology to create better products or solutions.
-                        </span>
-                    </p>
-                    <div class="about__items">
-                        <div>
-                            <span class="about__number">+01</span>
-                            <span class="about__achievement">Years off Experience</span>
-                        </div>
-                        <div>
-                            <span class="about__number">+10</span>
-                            <span class="about__achievement">Projects complete</span>
-                        </div>
-                    </div>
-                    
-                </div>
-                <img src="./assets/img/photo/MyPhoto2.png" alt="Mi foto 2" class="about__img">
+      <!--===== ABOUT =====-->
+      <section class="about section bd-container" id="about">
+        <h2 class="section-title">About me</h2>
+        <span class="section-subtitle">A bit of me</span>
+
+        <div class="about__container bd-grid">
+          <div class="about__data bd-grid">
+            <p class="about__description">
+              <span
+                >I am currently a systems engineer and fullstack developer with
+                over 4 years of experience in software development. I have a
+                strong passion for technological development, I am passionate
+                about creating efficient and scalable solutions that generate a
+                real impact on users and companies.
+                <br />
+                Throughout my career, I have worked on projects that cover both
+                the frontend and the backend, using modern technologies to build
+                robust, secure and high-performance applications.
+              </span>
+            </p>
+            <div class="about__items">
+              <div>
+                <span class="about__number">+04</span>
+                <span class="about__achievement">Years off Experience</span>
+              </div>
+              <div>
+                <span class="about__number">+10</span>
+                <span class="about__achievement">Projects complete</span>
+              </div>
             </div>
-        </section>
+          </div>
+          <img
+            src="./assets/img/photo/foto.png"
+            alt="Foto About"
+            class="about__img"
+          />
+        </div>
+      </section>
 
-        <!--===== QUALIFICATION =====-->
-        <section class="qualification section bd-container" id="qualification">
-            <h2 class="section-title">Qualification</h2>
-            <span class="section-subtitle">Experience , education and licenses and certifications </span> 
+      <!--===== QUALIFICATION =====-->
+      <section class="qualification section bd-container" id="qualification">
+        <h2 class="section-title">Qualification</h2>
+        <span class="section-subtitle"
+          >Experience , education and licenses and certifications
+        </span>
 
-            <div class="qualification__container bd-grid">
-                <!--===== QUALIFICATION // EDUCATION =====-->
-                <div class="qualification__content">
-                    <h2 class="qualification__title" >
-                        <i class="bx bx-book-bookmark qualification__title-icon"></i>
-                        Education
-                    </h2>
-                    <div class="bd-grid">
-                        <div class="qualification__data">
-                            <h3 class="qualification__area">Information systems analysis and development technologist </h3>
+        <div class="qualification__container bd-grid">
+          <!--===== QUALIFICATION // EDUCATION =====-->
+          <div class="qualification__content">
+            <h2 class="qualification__title">
+              <i class="bx bx-book-bookmark qualification__title-icon"></i>
+              Education
+            </h2>
+            <div class="bd-grid">
+              <div class="qualification__data">
+                <h3 class="qualification__area">Engineering in systems</h3>
+                <div class="qualification__box qualification__box__border">
+                  <span class="qualification__work">
+                    <i class="bx bx-book-bookmark qualification__icon"></i>
+                    CUN - Corporación unificada nacional <br />
+                    de educación superior
+                  </span>
 
-                            <div class="qualification__box">
-                                <span class="qualification__work">
-                                    <i class="bx bx-book-bookmark qualification__icon"></i>
-                                    SENA -Servicio nacional de aprendizaje
-                                </span>
-
-                                <span class="qualification__work">
-                                    <i class="bx bx-calendar-alt qualification__icon"></i>
-                                    Jan 2017 - Aug 2018
-                                </span>
-                            </div>
-                        </div>
-                        
-                        <div class="qualification__data">
-                            <h3 class="qualification__area">Software programming technician</h3>
-
-                            <div class="qualification__box">
-                                <span class="qualification__work">
-                                    <i class="bx bx-book-bookmark qualification__icon"></i>
-                                    SENA -Servicio nacional de aprendizaje
-                                </span>
-
-                                <span class="qualification__work">
-                                    <i class="bx bx-calendar-alt qualification__icon"></i>
-                                    Jan 2015- Dec 2016
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Jun 2021 - Oct 2024
+                  </span>
                 </div>
-                <!--===== QUALIFICATION // EXPERIENCE =====-->
-                <div class="qualification__content">
-                    <h2 class="qualification__title" >
-                        <i class="bx bx-briefcase-alt qualification__title-icon"></i>
-                        Work Experience
-                    </h2>
-                    <div class="bd-grid">
-                        <div class="qualification__data">
-                            <h3 class="qualification__area">Backend web developer jr</h3>
+              </div>
 
-                            <div class="qualification__box">
-                                <span class="qualification__work">
-                                    <i class="bx bx-briefcase-alt qualification__icon"></i>
-                                    Mensajeros urbanos
-                                </span>
+              <div class="qualification__data">
+                <h3 class="qualification__area">
+                  Information systems analysis and development technologist
+                </h3>
 
-                                <span class="qualification__work">
-                                    <i class="bx bx-calendar-alt qualification__icon"></i>
-                                    Nov 2018 - Dec 2019
-                                </span>
-                            </div>
-                        </div>
+                <div class="qualification__box qualification__box__border">
+                  <span class="qualification__work">
+                    <i class="bx bx-book-bookmark qualification__icon"></i>
+                    SENA -Servicio nacional de aprendizaje
+                  </span>
 
-
-                        <div class="qualification__data">
-                            <h3 class="qualification__area">Backend web developer jr</h3>
-
-                            <div class="qualification__box">
-                                <span class="qualification__work">
-                                    <i class="bx bx-briefcase-alt qualification__icon"></i>
-                                    IDAE Soluciones
-                                </span>
-
-                                <span class="qualification__work">
-                                    <i class="bx bx-calendar-alt qualification__icon"></i>
-                                    Sep 2020 - Jul 2021
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Jan 2017 - Aug 2018
+                  </span>
                 </div>
-                <!--===== QUALIFICATION // LICENSES AND CERTIFICATIONS =====-->
-                <div class="qualification__content">
-                    <h2 class="qualification__title" >
-                        <i class="bx bxs-folder-open qualification__title-icon"></i>
-                        Licenses and certifications
-                    </h2>
-                    <div class="bd-grid">
-                        <div class="qualification__data">
-                            <h3 class="qualification__area">Bootcamp fullstack Javascript</h3>
+              </div>
 
-                            <div class="qualification__box">
-                                <span class="qualification__work">
-                                    <i class="bx bx-folder-open qualification__icon"></i>
-                                    BICTIA
-                                </span>
+              <div class="qualification__data">
+                <h3 class="qualification__area">
+                  Software programming technician
+                </h3>
 
-                                <span class="qualification__work">
-                                    <i class="bx bx-calendar-alt qualification__icon"></i>
-                                    Jul 2020
-                                </span>
-                            </div>
-                        </div> 
-                        
-                        <div class="qualification__data">
-                            <h3 class="qualification__area">SCRUM Foundation Professional Certificate (SFPC) </h3>
+                <div class="qualification__box qualification__box__border">
+                  <span class="qualification__work">
+                    <i class="bx bx-book-bookmark qualification__icon"></i>
+                    SENA -Servicio nacional de aprendizaje
+                  </span>
 
-                            <div class="qualification__box">
-                                <span class="qualification__work">
-                                    <i class="bx bx-folder-open qualification__icon"></i>
-                                    CertiProf
-                                </span>
-
-                                <span class="qualification__work">
-                                    <i class="bx bx-calendar-alt qualification__icon"></i>
-                                    Jun 2020
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="qualification__data">
-                            <h3 class="qualification__area">Fundamentals of programming and creation of web pages </h3>
-
-                            <div class="qualification__box">
-                                <span class="qualification__work">
-                                    <i class="bx bx-folder-open qualification__icon"></i>
-                                    BICTIA
-                                </span>
-
-                                <span class="qualification__work">
-                                    <i class="bx bx-calendar-alt qualification__icon"></i>
-                                    Mar 2020
-                                </span>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Jan 2015- Dec 2016
+                  </span>
                 </div>
-                
-                
+              </div>
             </div>
-        </section>
+          </div>
+          <!--===== QUALIFICATION // LICENSES AND CERTIFICATIONS =====-->
+          <div class="qualification__content">
+            <h2 class="qualification__title">
+              <i class="bx bxs-folder-open qualification__title-icon"></i>
+              Licenses and certifications
+            </h2>
+            <div class="bd-grid">
+              <div class="qualification__data">
+                <h3 class="qualification__area">
+                  Diploma in Project Management Aligned with the PMI Methodology
+                </h3>
 
-        <!--===== SKILS =====-->
-        <section class="skills section bd-container" id="skills">
-            <h2 class="section-title">My Skills</h2>
-            
-            <div class="skills__container bd-grid">
-                <div class="bd-grid">
-                    <div class="skills-title">
-                        <span class="section-subtitle" >Backend / Frontend</span>
-                    </div>
-                    <div class="skills__content">
-                        <div class="skills__box">
-                            <div class="imgBx">
-                                <img src="./assets/img/skills/csharp.png" alt="80">
-                            </div>
-                            <div class="contentBx">
-                                <span href="#" class="section-subtitle">C#</span>
-                            </div>
-                        </div>
+                <div class="qualification__box qualification__box__border">
+                  <span class="qualification__work">
+                    <i class="bx bx-folder-open qualification__icon"></i>
+                    CUN - Corporación unificada nacional <br />
+                    de educación superior
+                  </span>
 
-                        <div class="skills__box">
-                            <div class="imgBx">
-                                <img src="./assets/img/skills/node.png" alt="80">
-                            </div>
-                            <div class="contentBx">
-                                <span href="#" class="section-subtitle">Node JS</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__box">
-                            <div class="imgBx">
-                                <img src="./assets/img/skills/typescript.svg" alt="80">
-                            </div>
-                            <div class="contentBx">
-                                <span href="#" class="section-subtitle">TypeScript</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__box">
-                            <div class="imgBx">
-                                <img src="./assets/img/skills/angular.png" alt="80">
-                            </div>
-                            <div class="contentBx">
-                                <span href="#" class="section-subtitle">Angular</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                    <div class="skills-title">
-                        <span class="section-subtitle" >Databases: SQL / NoSQL</span>
-                    </div>
-                    <div class="skills__content">
-                        <div class="skills__box">
-                            <div class="imgBx">
-                                <img src="./assets/img/skills/mysql.png" alt="80">
-                            </div>
-                            <div class="contentBx">
-                                <span href="#" class="section-subtitle">SQL - MySQL</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__box">
-                            <div class="imgBx">
-                                <img src="./assets/img/skills/sqlServer.png" alt="80">
-                            </div>
-                            <div class="contentBx">
-                                <span href="#" class="section-subtitle">SQL - SQLServer</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__box">
-                            <div class="imgBx">
-                                <img src="./assets/img/skills/mongodb.png" alt="80">
-                            </div>
-                            <div class="contentBx">
-                                <span href="#" class="section-subtitle">NoSQL - MongoDB</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <span class="section-subtitle" >Extra</span>
-                    <div class="skills__content">
-                        <div class="skills__box">
-                            <div class="imgBx">
-                                <img src="./assets/img/skills/git.png" alt="80">
-                            </div>
-                            <div class="contentBx">
-                                <span href="#" class="section-subtitle">GIT</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__box">
-                            <div class="imgBx">
-                                <img src="./assets/img/skills/json.png" alt="80">
-                            </div>
-                            <div class="contentBx">
-                                <span href="#" class="section-subtitle">JSON</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__box">
-                            <div class="imgBx">
-                                <img src="./assets/img/skills/api.png" alt="80">
-                            </div>
-                            <div class="contentBx">
-                                <span href="#" class="section-subtitle">API REST</span>
-                            </div>
-                        </div>
-                    </div>
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Sep 2022
+                  </span>
                 </div>
+              </div>
+
+              <div class="qualification__data">
+                <h3 class="qualification__area">
+                  Bootcamp fullstack Javascript
+                </h3>
+
+                <div class="qualification__box qualification__box__border">
+                  <span class="qualification__work">
+                    <i class="bx bx-folder-open qualification__icon"></i>
+                    BICTIA
+                  </span>
+
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Jul 2020
+                  </span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <h3 class="qualification__area">
+                  SCRUM Foundation Professional Certificate (SFPC)
+                </h3>
+
+                <div class="qualification__box qualification__box__border">
+                  <span class="qualification__work">
+                    <i class="bx bx-folder-open qualification__icon"></i>
+                    CertiProf
+                  </span>
+
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Jun 2020
+                  </span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <h3 class="qualification__area">
+                  Fundamentals of programming and creation of web pages
+                </h3>
+
+                <div class="qualification__box qualification__box__border">
+                  <span class="qualification__work">
+                    <i class="bx bx-folder-open qualification__icon"></i>
+                    BICTIA
+                  </span>
+
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Mar 2020
+                  </span>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <!--===== QUALIFICATION // EXPERIENCE =====-->
+          <div class="qualification__content qualification__work-content">
+            <h2 class="qualification__title">
+              <i class="bx bxs-building qualification__title-icon"></i>
+              Work Experience
+            </h2>
+            <div class="bd-grid qualification__work-grid">
+              <div class="qualification__data qualification__box__border">
+                <h3 class="qualification__area">FullStack Developer</h3>
 
-        <!--===== SERVICES =====-->
-        <section class="services section bd-container">
-            <h2 class="section-title">Services</h2>
-            <span class="section-subtitle">What i offer</span>
+                <div class="qualification__box">
+                  <span class="qualification__work">
+                    <i class="bx bx-building qualification__icon"></i>
+                    Yeapdata
+                  </span>
 
-            <div class="services__container bd-grid">
-
-                <div class="services__data">
-                    <i class="bx bx-laptop services__icon"></i>    
-                    <h3 class="services__title">Web Development</h3>
-                    <p class="services__description">Maintenance, development and improvements of web-oriented applications </p>
-                </div>   
-
-                <div class="services__data">
-                    <i class="bx bx-data services__icon"></i>    
-                    <h3 class="services__title">Database</h3>
-                    <p class="services__description">Design, maintenance and improvements in the databases of different applications</p>
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    May 2025 - Jun 2026
+                  </span>
                 </div>
+                <div class="qualification__box">
+                  <div class="qualification__details">
+                    <span class="qualification__work">
+                      <i class="bx bx-code qualification__icon"></i>
+                      Technologies used: Python, Java, Angular, React,
+                      PostgreSQL
+                    </span>
+                    <span class="qualification__work">
+                      <i class="bx bx-briefcase-alt qualification__icon"></i>
+                      Company functions: Development and updating of the
+                      company's main website, creation of client pages, and
+                      support in the implementation of a new technology project
+                      for the Bogotá district emergency hotline.
+                    </span>
+                  </div>
+                </div>
+              </div>
 
-                <div class="services__data">
-                    <i class="bx bx-code-curly services__icon"></i>    
-                    <h3 class="services__title">Backend Development</h3>
-                    <p class="services__description">Development, maintenance and improvements in the business logic from the server</p>
-                </div> 
-                
-                
+              <div class="qualification__data qualification__box__border">
+                <h3 class="qualification__area">FullStack Developer</h3>
+
+                <div class="qualification__box">
+                  <span class="qualification__work">
+                    <i class="bx bx-briefcase-alt qualification__icon"></i>
+                    Banco de Bogotá
+                  </span>
+
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Sep 2023 - Jan 2025
+                  </span>
+                </div>
+                <div class="qualification__box">
+                  <div class="qualification__details">
+                    <span class="qualification__work">
+                      <i class="bx bx-code qualification__icon"></i>
+                      Technologies used: Node.js, Java, AWS, Angular
+                    </span>
+                    <span class="qualification__work">
+                      <i class="bx bx-briefcase-alt qualification__icon"></i>
+                      Company functions: Perform maintenance and optimization of
+                      functionalities, with a special focus on AWS services to
+                      support mobile and web applications. Develop and test new
+                      functionalities for both the web and internal APIs.
+                      Propose, analyze, and implement changes and updates to the
+                      company's architecture and technological developments.
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification__data qualification__box__border">
+                <h3 class="qualification__area">Software Developer Jr</h3>
+
+                <div class="qualification__box">
+                  <span class="qualification__work">
+                    <i class="bx bx-building qualification__icon"></i>
+                    Minos IT
+                  </span>
+
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Sep 2022 - Feb 2023
+                  </span>
+                </div>
+                <div class="qualification__box">
+                  <div class="qualification__details">
+                    <span class="qualification__work">
+                      <i class="bx bx-code qualification__icon"></i>
+                      Technologies used: C# .NET, SQL Server, React, Redis,
+                      JavaScript
+                    </span>
+                    <span class="qualification__work">
+                      <i class="bx bx-briefcase-alt qualification__icon"></i>
+                      Company functions: Lead the launch of a new project
+                      focused on information obfuscation, encompassing both the
+                      backend and frontend. Provide support and implement
+                      improvements to components and functionalities of existing
+                      projects, ensuring their quality and performance.
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification__data qualification__box__border">
+                <h3 class="qualification__area">Software Developer</h3>
+
+                <div class="qualification__box">
+                  <span class="qualification__work">
+                    <i class="bx bx-briefcase-alt qualification__icon"></i>
+                    Zenware
+                  </span>
+
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Aug 2021 - Jul 2022
+                  </span>
+                </div>
+                <div class="qualification__box">
+                  <div class="qualification__details">
+                    <span class="qualification__work">
+                      <i class="bx bx-code qualification__icon"></i>
+                      Technologies used: C# .NET, SQL Server, MongoDB, Angular
+                    </span>
+                    <span class="qualification__work">
+                      <i class="bx bx-briefcase-alt qualification__icon"></i>
+                      Company functions: Develop and test new functionalities in
+                      both the backend and frontend, maintain and improve
+                      components and functionalities in a specific project.
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification__data qualification__box__border">
+                <h3 class="qualification__area">Backend Developer Jr</h3>
+
+                <div class="qualification__box">
+                  <span class="qualification__work">
+                    <i class="bx bx-briefcase-alt qualification__icon"></i>
+                    IDAE Soluciones
+                  </span>
+
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Sep 2020 - Jul 2021
+                  </span>
+                </div>
+                <div class="qualification__box">
+                  <div class="qualification__details">
+                    <span class="qualification__work">
+                      <i class="bx bx-code qualification__icon"></i>
+                      Technologies used: C# .NET, SQL Server, JavaScript
+                    </span>
+                    <span class="qualification__work">
+                      <i class="bx bx-briefcase-alt qualification__icon"></i>
+                      Company functions: Maintenance and improvements to
+                      functionalities, especially in the API, to provide
+                      services to mobile and web applications. Development and
+                      testing of new functionalities for the web and the API.
+                      Proposing and discussing changes and updates to the
+                      company's architecture and developments.
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification__data qualification__box__border">
+                <h3 class="qualification__area">Backend Developer Jr</h3>
+
+                <div class="qualification__box">
+                  <span class="qualification__work">
+                    <i class="bx bx-briefcase-alt qualification__icon"></i>
+                    Mensajeros Urbanos
+                  </span>
+
+                  <span class="qualification__work">
+                    <i class="bx bx-calendar-alt qualification__icon"></i>
+                    Nov 2018 - Jan 2019
+                  </span>
+                </div>
+                <div class="qualification__box">
+                  <div class="qualification__details">
+                    <span class="qualification__work">
+                      <i class="bx bx-code qualification__icon"></i>
+                      Technologies used: PHP, MySQL, JavaScript, HTML, CSS
+                    </span>
+                    <span class="qualification__work">
+                      <i class="bx bx-briefcase-alt qualification__icon"></i>
+                      Company functions: Develop new functionalities for
+                      internal administration web applications and the
+                      commercial website. Maintain and improve components and
+                      functionalities in the web applications.
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--===== PORTFOLIO =====-->
-        <section class="portfolio section bd-container" id="portfolio">
-            <h2 class="section-title">Portfolio</h2>
-            <span class="section-subtitle">My recent works </span>
+      <!--===== SKILS =====-->
+      <section class="skills section bd-container" id="skills">
+        <h2 class="section-title">My Skills</h2>
 
-            <div class="portfolio__nav">
-                <span class="portfolio__item active-portfolio" data-filter="all">All</span>
-                <span class="portfolio__item" data-filter=".web">Web</span>
-                <span class="portfolio__item" data-filter=".ux">Ui/Ux</span>
-                <span class="portfolio__item" data-filter=".app">App</span>
+        <div class="skills__container bd-grid">
+          <div class="bd-grid">
+            <div class="skills-title">
+              <span class="section-subtitle">Backend</span>
+            </div>
+            <div class="skills__content">
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/python.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">Python</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/java.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">Java</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/node.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">Node JS</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/csharp.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">C# .NET</span>
+                </div>
+              </div>
             </div>
 
-            <div class="portfolio__container bd-grid">
-                <div class="portfolio__content mix web">
-                    <a href="#"><img src="./assets/img/portfolio/work1.jpg" alt="Work 1" class="portfolio__img"></a>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">
-                            Web Developer
-                        </span>
-                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix web">
-                    <a href="#"><img src="./assets/img/portfolio/work2.jpg" alt="Work 2" class="portfolio__img"></a>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">
-                            Web Developer
-                        </span>
-                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="portfolio__content mix ux">
-                    <a href="#"><img src="./assets/img/portfolio/work3.jpg" alt="Work 3" class="portfolio__img"></a>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">
-                            Ux desing 
-                        </span>
-                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix ux">
-                    <a href="#"><img src="./assets/img/portfolio/work4.jpg" alt="Work 4" class="portfolio__img"></a>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">
-                            Ux desing 
-                        </span>
-                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix app">
-                    <a href="#"><img src="./assets/img/portfolio/work5.jpg" alt="Work 5" class="portfolio__img"></a>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">
-                            Mobile app
-                        </span>
-                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
-                
-                <div class="portfolio__content mix app">
-                    <a href="#"><img src="./assets/img/portfolio/work6.jpg" alt="Work 6" class="portfolio__img"></a>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">
-                            Mobile app
-                        </span>
-                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
-
+            <div class="skills-title">
+              <span class="section-subtitle">Frontend</span>
             </div>
-            
-        </section>
-
-        <!--===== TESTIMONIAL 
-        <section class="testimonial section bd-container">
-            <h2 class="section-title">Testimonial</h2>
-            <span class="section-subtitle">My client saying</span>
-
-            <div class="testimonial__container swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="testimonial__content swiper-slide">
-                        <img src="./assets/img/testimonial/testimonial1.jpg" alt="testimonial 1" class="testimonial__img">
-                        <h3 class="testimonial__title">Nik Holly</h3>
-                        <span class="testimonial__client">Client</span>
-                        <p class="testimonial__description">This company does a very good services offers the best deals and does a good job recommend it</p>
-                    </div>
-
-                    <div class="testimonial__content swiper-slide">
-                        <img src="./assets/img/testimonial/testimonial2.jpg" alt="testimonial 2" class="testimonial__img">
-                        <h3 class="testimonial__title">Sara Mill</h3>
-                        <span class="testimonial__client">Client</span>
-                        <p class="testimonial__description">This company does a very good services offers the best deals and does a good job recommend it</p>
-                    </div>
-
-                    <div class="testimonial__content swiper-slide">
-                        <img src="./assets/img/testimonial/testimonial3.jpg" alt="testimonial 3" class="testimonial__img">
-                        <h3 class="testimonial__title">Clay Mitchell</h3>
-                        <span class="testimonial__client">Client</span>
-                        <p class="testimonial__description">This company does a very good services offers the best deals and does a good job recommend it</p>
-                    </div>
+            <div class="skills__content">
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/angular.png" alt="80" />
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="contentBx">
+                  <span class="section-subtitle">Angular</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/react.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">React</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/typescript.svg" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">TypeScript</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/basic.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">HTML,CSS, JS</span>
+                </div>
+              </div>
             </div>
-        </section>=====-->
 
-        <!--===== PROJECT IN MIND 
-            <section class="project section bd-container">
-                <div class="project__container bd-grid">
-                    <div class="project__data">
-                        <i class="bx bx-chat project__icon"></i>
-                        <div>
-                            <h2 class="project__title">Project in mind</h2>
-                            <p class="project__description">Hire me to carry out the funny bunny</p>
-                        </div>
-                        <div>
-                            <a href="#" class="button button-white">Hire man</a>
-                        </div>
-                    </div>
+            <div class="skills-title">
+              <span class="section-subtitle">Databases: SQL / NoSQL</span>
+            </div>
+            <div class="skills__content">
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/mysql.png" alt="80" />
                 </div>
-            </section>
-        =====-->
-
-        <!--===== CONTACTME =====-->
-        <section class="contact section bd-container" id="contact">
-            <h2 class="section-title">Contact Me</h2>
-            <span class="section-subtitle" >For projects</span>
-
-            <div class="contact__container bd-grid">
-                <div class="contact__content bd-grid">
-                    <div class="contact__box">
-                        <i class="bx bx-home contact__icon"></i>
-                        <h3 class="contact__title">Location</h3>
-                        <span class="contact__description">Colombia - Bogota D.C</span>  
-                    </div>
-
-                    <div class="contact__box">
-                        <i class="bx bxl-telegram contact__icon"></i>
-                        <h3 class="contact__title">Telegram</h3>
-                        <a href="https://www.linkedin.com/in/tiancamilo01/" class="button button-link button-contact" target="_blank">Contact by telegram</a>
-                    </div>
-
-                    <div class="contact__box">
-                        <i class="bx bx-envelope contact__icon"></i>
-                        <h3 class="contact__title">Gmail</h3>
-                        <a href="mailto:tiancamilo59@gmail.com" class="button button-link button-contact" target="_blank">Contact by gmail</a>
-                    </div>
-
-                    <div class="contact__box">
-                        <i class="bx bxl-linkedin contact__icon"></i>
-                        <h3 class="contact__title">Linkedin</h3>
-                        <a href="https://www.linkedin.com/in/tiancamilo01/" class="button button-link button-contact" target="_blank">Contact by linkedin</a>
-                    </div>
-
-                    
+                <div class="contentBx">
+                  <span class="section-subtitle">SQL - MySQL</span>
                 </div>
-                <!--===== FORMS CONTACTME 
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/sqlServer.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">SQL - SQLServer</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/postgresql.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">SQL - PostgreSQL</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/mongodb.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">NoSQL - MongoDB</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/redis.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">NoSQL - RedisDB</span>
+                </div>
+              </div>
+            </div>
+
+            <span class="section-subtitle">Extra</span>
+            <div class="skills__content">
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/git.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">GIT</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/docker.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">Docker</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/api.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">API REST</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/json.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">JSON</span>
+                </div>
+              </div>
+
+              <div class="skills__box">
+                <div class="imgBx">
+                  <img src="./assets/img/skills/scrum.png" alt="80" />
+                </div>
+                <div class="contentBx">
+                  <span class="section-subtitle">SCRUM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SERVICES =====-->
+      <section class="services section bd-container" id="services">
+        <h2 class="section-title">Services</h2>
+        <span class="section-subtitle">What i offer</span>
+
+        <div class="services__container bd-grid">
+          <div class="services__data">
+            <i class="bx bx-rocket services__icon"></i>
+            <h3 class="services__title">Fullstack Development</h3>
+            <p class="services__description">
+              Web applications from frontend interfaces to backend services.
+            </p>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-code-curly services__icon"></i>
+            <h3 class="services__title">API Development</h3>
+            <p class="services__description">
+              Secure and scalable REST APIs and integrations.
+            </p>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-data services__icon"></i>
+            <h3 class="services__title">Database Solutions</h3>
+            <p class="services__description">
+              SQL and NoSQL database design and optimization.
+            </p>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-wrench services__icon"></i>
+            <h3 class="services__title">Maintenance & Optimization</h3>
+            <p class="services__description">
+              Improvements, refactoring and application modernization.
+            </p>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-cloud services__icon"></i>
+            <h3 class="services__title">Cloud & Deployment</h3>
+            <p class="services__description">
+              Cloud configuration and application deployment.
+            </p>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-cog services__icon"></i>
+            <h3 class="services__title">System Integration</h3>
+            <p class="services__description">
+              Connecting platforms, services and business systems.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== PORTFOLIO 
+      <section class="portfolio section bd-container" id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+        <span class="section-subtitle">My recent works </span>
+
+        <div class="portfolio__nav">
+          <span class="portfolio__item active-portfolio" data-filter="all"
+            >All</span
+          >
+          <span class="portfolio__item" data-filter=".web">Web</span>
+          <span class="portfolio__item" data-filter=".ux">Ui/Ux</span>
+          <span class="portfolio__item" data-filter=".app">App</span>
+        </div>
+
+        <div class="portfolio__container bd-grid">
+          <div class="portfolio__content mix web">
+            <a href="#"
+              ><img
+                src="./assets/img/portfolio/work1.jpg"
+                alt="Work 1"
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle"> Web Developer </span>
+              <a href="#"
+                ><h2 class="portfolio__title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix web">
+            <a href="#"
+              ><img
+                src="./assets/img/portfolio/work2.jpg"
+                alt="Work 2"
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle"> Web Developer </span>
+              <a href="#"
+                ><h2 class="portfolio__title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix ux">
+            <a href="#"
+              ><img
+                src="./assets/img/portfolio/work3.jpg"
+                alt="Work 3"
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle"> Ux desing </span>
+              <a href="#"
+                ><h2 class="portfolio__title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix ux">
+            <a href="#"
+              ><img
+                src="./assets/img/portfolio/work4.jpg"
+                alt="Work 4"
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle"> Ux desing </span>
+              <a href="#"
+                ><h2 class="portfolio__title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix app">
+            <a href="#"
+              ><img
+                src="./assets/img/portfolio/work5.jpg"
+                alt="Work 5"
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle"> Mobile app </span>
+              <a href="#"
+                ><h2 class="portfolio__title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix app">
+            <a href="#"
+              ><img
+                src="./assets/img/portfolio/work6.jpg"
+                alt="Work 6"
+                class="portfolio__img"
+            /></a>
+            <div class="portfolio__data">
+              <span class="portfolio__subtitle"> Mobile app </span>
+              <a href="#"
+                ><h2 class="portfolio__title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      =====-->
+
+      <!--===== TESTIMONIAL 
+      <section class="testimonial section bd-container">
+        <h2 class="section-title">Testimonial</h2>
+        <span class="section-subtitle">My client saying</span>
+
+        <div class="testimonial__container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial__content swiper-slide">
+              <img
+                src="./assets/img/testimonial/testimonial1.jpg"
+                alt="testimonial 1"
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__title">Nik Holly</h3>
+              <span class="testimonial__client">Client</span>
+              <p class="testimonial__description">
+                This company does a very good services offers the best deals and
+                does a good job recommend it
+              </p>
+            </div>
+
+            <div class="testimonial__content swiper-slide">
+              <img
+                src="./assets/img/testimonial/testimonial2.jpg"
+                alt="testimonial 2"
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__title">Sara Mill</h3>
+              <span class="testimonial__client">Client</span>
+              <p class="testimonial__description">
+                This company does a very good services offers the best deals and
+                does a good job recommend it
+              </p>
+            </div>
+
+            <div class="testimonial__content swiper-slide">
+              <img
+                src="./assets/img/testimonial/testimonial3.jpg"
+                alt="testimonial 3"
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__title">Clay Mitchell</h3>
+              <span class="testimonial__client">Client</span>
+              <p class="testimonial__description">
+                This company does a very good services offers the best deals and
+                does a good job recommend it
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      =====-->
+
+      <!-- ===== PROJECT IN MIND
+      <section class="project section bd-container">
+        <div class="project__container bd-grid">
+          <div class="project__data">
+            <i class="bx bx-chat project__icon"></i>
+            <div>
+              <h2 class="project__title">Project in mind</h2>
+              <p class="project__description">
+                Hire me to carry out the funny bunny
+              </p>
+            </div>
+            <div>
+              <a href="#" class="button button-white">Hire man</a>
+            </div>
+          </div>
+        </div>
+      </section>
+       ===== -->
+
+      <!--===== CONTACTME =====-->
+      <section class="contact section bd-container" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <span class="section-subtitle">For projects</span>
+
+        <div class="contact__container bd-grid">
+          <div class="contact__content bd-grid">
+            <div class="contact__box">
+              <i class="bx bx-home contact__icon"></i>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__description">Colombia - Bogota D.C</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bxl-telegram contact__icon"></i>
+              <h3 class="contact__title">Telegram</h3>
+              <a
+                href="https://www.telegram.me/tiandev"
+                class="button button-link button-contact"
+                target="_blank"
+                >Contact by telegram</a
+              >
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bx-envelope contact__icon"></i>
+              <h3 class="contact__title">Gmail</h3>
+              <a
+                href="mailto:tiancamilo59@gmail.com"
+                class="button button-link button-contact"
+                target="_blank"
+                >Contact by gmail</a
+              >
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bxl-linkedin contact__icon"></i>
+              <h3 class="contact__title">Linkedin</h3>
+              <a
+                href="https://www.linkedin.com/in/tian-dev/"
+                class="button button-link button-contact"
+                target="_blank"
+                >Contact by linkedin</a
+              >
+            </div>
+          </div>
+          <!--===== FORMS CONTACTME 
                 <form action="" class="contact__form">
                     <div class="contact__inputs">
                         <input type="text" placeholder="Name" class="contact__input">
@@ -564,53 +1027,48 @@
                     <input type="submit" value="Send Message" class="button contact__button">
                 </form>
                 =====-->
-            </div>
-        </section>
-
+        </div>
+      </section>
     </main>
 
     <!--===== FOOTER =====-->
     <footer class="footer">
-        <div class="footer__container bd-container">
-            <div class="footer__section">
-                <div>
-                    <img class="header__logo" id="header__logo" src="./assets/img/logos/LogoTianBlanco.png" alt="Logo tian">
-                </div>
-                <div>
-                    <p>📋✍ Dedication to meet my goals.</p>
-                    <p>👨‍🏫💻 Continuous learning to improve day by day.</p>
-                    <p>👨‍💻👩‍💻 Teamwork to improve efforts and increase the effectiveness of results.</p>
-                </div>
-            </div>
-            
-            <p class="footer__copy">&#169; 2021 Tian Developer. All right reserved</p>
+      <div class="footer__container bd-container">
+        <div class="footer__section">
+          <div>
+            <img
+              class="header__logo"
+              id="header__logo"
+              src="./assets/img/logos/LogoTianBlanco.png"
+              alt="Logo tian"
+            />
+          </div>
+          <div>
+            <p>📋✍ Dedication to meet my goals.</p>
+            <p>👨‍🏫💻 Continuous learning to improve day by day.</p>
+            <p>
+              👨‍💻👩‍💻 Teamwork to improve efforts and increase the effectiveness of
+              results.
+            </p>
+          </div>
         </div>
+
+        <p class="footer__copy">
+          &#169; 2026 Tian Developer. All right reserved
+        </p>
+      </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- ===== MIXITUP FILTER ===== -->
     <script src="./assets/js/mixitup.min.js"></script>
-        
+
     <!-- ===== SWIPER JS ===== -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
-    
+
     <!-- ===== GSAP ===== -->
     <script src=""></script>
-    
+
     <!--===== MAIN JS =====-->
     <script src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>
